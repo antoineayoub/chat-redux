@@ -1,9 +1,150 @@
 body {
-  color: white;
-  background-color: black;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  background-color: white;
 }
 
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0;
 }
+
+.messages{
+  height: 500px;
+  overflow-y: scroll;
+  flex-grow: 1;
+  margin-left: 210px;
+  margin-top: 80px;
+}
+
+.msg-form{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 210px;
+}
+.msg-input{
+  padding: 15px;
+  border: 2px solid rgba(160,160,162,.7);
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+   flex-grow: 1;
+
+}
+
+.header-msg{
+  margin-bottom: 0 0 5px 0;
+  h1{
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 900;
+    color: #2C2D30!important;
+    line-height: 18px;
+    text-transform: lowercase;
+  }
+  .time{
+    color: rgb(150,150,150);
+    font-size: 10px;
+    font-style: italic;
+    margin: 0;
+  }
+
+}
+.btn-submit{
+  border-radius: 5px;
+  margin: 0;
+}
+.content-container{
+    padding: 10px;
+    background-color: rgba(220,220,220,0.4);
+    border-radius: 5px;
+}
+
+.active{
+  background-color: #4C9689;
+    color: rgb(230,230,230) !important;
+}
+
+.main-container{
+  display: flex;
+}
+
+.channel-list{
+
+  width: 200px;
+  background-color: #4D394B;
+  font-size: 24px;
+  text-transform: lowercase;
+  position: fixed;
+  height: 100vh;
+  h1{
+    padding-left: 10px;
+    font-weight: 800;
+    font-size: 21px;
+    color: white;
+    text-transform: capitalize;
+        margin-bottom: 0px;
+  }
+  p{
+    color: rgb(202,196,201);
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin: 0;
+    padding-bottom: 3px;
+    padding-top: 3px;
+  }
+  .channelLeft{
+    color: rgb(150,150,150);
+
+  }
+}
+
+.container{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wrapperMessage{
+  flex-grow: 1;
+  .selectedChannel{
+    position: fixed;
+    left: 210px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+.btn-submit {
+    border-radius: 0 5px 5px 0;
+    /* margin-left: 5px; */
+    background: white;
+    border: 2px solid rgba(160,160,162,.7) !important;
+}
+
+.currentUser{
+  .login{
+    font-family: FontAwesome !important;
+    font-size: 10px;
+    color: #38978D;
+    padding-right: 2px;
+  }
+}
+.fa-input {
+  font-family: FontAwesome !important;
+  padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: gray;
+    &:hover{
+      background: #56B68B;
+      color: #FFFFFF;
+      border-color: #4c9689;
+    }
+}
+
+.margin-top{
+  margin-top: 41px;
+}
+
