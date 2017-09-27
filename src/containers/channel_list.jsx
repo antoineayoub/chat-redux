@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { setChannel } from '../actions';
+import { setChannel, setMessages } from '../actions';
 
 class ChannelList extends Component {
 
   handleClick = (channel) =>{
     this.props.setChannel(channel);
+    this.props.setMessages(channel);
   }
 
   render(){
@@ -45,7 +46,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    { setChannel },
+    { setChannel, setMessages },
     dispatch
   );
 }

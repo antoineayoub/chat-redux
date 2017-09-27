@@ -7,7 +7,7 @@ export default function messagesReducer(state = null, action) {
       messages.push(action.payload);
       return messages;
     case 'SET_CHANNEL':
-      return action.payload.messages;
+      return [];
     default:
       return state;
   }
